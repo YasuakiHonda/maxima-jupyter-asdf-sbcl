@@ -1,2 +1,2 @@
 # maxima-jupyter-asdf-sbcl
-Dockerfile of maxima built on sbcl with maxima-jupyter and maxima-asdf support
+Dockerfile of Maxima CAS built on sbcl with maxima-jupyter and maxima-asdf support
