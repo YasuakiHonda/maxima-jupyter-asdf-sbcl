@@ -31,10 +31,10 @@ RUN echo "installing SBCL 1" && \
 WORKDIR /root
 RUN echo "building maxima" && \
     ln -s /usr/bin/python3 /usr/local/bin/python && \
-    wget https://sourceforge.net/projects/maxima/files/Maxima-source/5.43.2-source/maxima-5.43.2.tar.gz && \
-    tar xvfz maxima-5.43.2.tar.gz && \
-    cd maxima-5.43.2 && ./configure && make && make install && \
-    cd .. && rm maxima-5.43.2.tar.gz && rm -rf maxima-5.43.2
+    wget https://sourceforge.net/projects/maxima/files/Maxima-source/5.44.0-source/maxima-5.44.0.tar.gz && \
+    tar xvfz maxima-5.44.0.tar.gz && \
+    cd maxima-5.44.0 && ./configure && make && make install && \
+    cd .. && rm maxima-5.44.0.tar.gz && rm -rf maxima-5.44.0
 
 WORKDIR /root
 RUN wget https://beta.quicklisp.org/quicklisp.lisp && \
