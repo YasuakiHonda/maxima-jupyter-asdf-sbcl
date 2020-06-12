@@ -66,6 +66,8 @@ RUN echo "installing maxima-jupyter 1" && \
     unzip master.zip && \
     cd maxima-jupyter-master && \
     maxima --batch-string "load(\"load-maxima-jupyter.lisp\");jupyter_install();" && \
+    cd /root && mkdir .maxima && \
+    echo 'set_draw_defaults(terminal=svg)$set_plot_option([svg_file, "maxplot.svg"])$' > .maxima/maxima-init.mac && \
     cd /root && rm master.zip && rm -rf maxima-jupyter-master
 
 WORKDIR /root
